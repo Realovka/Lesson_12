@@ -1,4 +1,4 @@
-package com.company.application;
+package com.company.application.config;
 
 import com.company.application.actions.*;
 

@@ -1,6 +1,6 @@
 package com.company;
 
-import com.company.application.ConsoleApplication;
+import com.company.application.config.ConsoleApplication;
 
 
 public class Main {
