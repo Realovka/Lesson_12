@@ -2,13 +2,14 @@ package com.company.controllers;
 
 import com.company.dao.CarDao;
 import com.company.dao.MemoryCarDao;
+import com.company.dao.SerializableCarDao;
 import com.company.entity.Car;
 import com.company.exception.DuplicateCarException;
 
 import java.util.List;
 
 public class CarController {
-    private CarDao carDao= MemoryCarDao.getInstance();
+    private CarDao carDao= new SerializableCarDao();
 
     public void add(Car car) throws DuplicateCarException {
         if (car.getModel().startsWith("F")){
