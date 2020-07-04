@@ -13,6 +13,6 @@ public class DiscountTemplate implements Template{
 
     @Override
     public String getText() {
-        return String.format("Уважаемый %s. У нас скидки на всё 30 процентов. Ждем вас!", name);
+        return String.format("Уважаемый, %s. У нас скидки на всё 30 процентов. Ждем вас!", name);
     }
 }
