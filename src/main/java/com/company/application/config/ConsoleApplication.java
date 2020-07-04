@@ -1,7 +1,6 @@
 package com.company.application.config;
 
 import com.company.application.actions.Action;
-import com.company.application.config.Config;
 import com.company.application.exception.StopApplicationException;
 import com.company.application.utils.Input;
 

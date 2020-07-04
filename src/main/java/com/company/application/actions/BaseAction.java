@@ -2,10 +2,12 @@ package com.company.application.actions;
 
 import com.company.application.utils.Input;
 import com.company.controllers.CarController;
+import com.company.controllers.MailController;
 import com.company.entity.Car;
 
 public abstract class BaseAction implements Action {
     protected CarController carController = new CarController();
+    protected MailController mailController=new MailController();
 
     protected Car createCar(){
         int id = Input.getInt("Введите ID");

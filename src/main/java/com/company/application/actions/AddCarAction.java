@@ -1,6 +1,5 @@
 package com.company.application.actions;
 
-import com.company.application.utils.Input;
 import com.company.entity.Car;
 import com.company.exception.DuplicateCarException;
 
