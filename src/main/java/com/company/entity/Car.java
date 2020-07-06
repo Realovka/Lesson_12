@@ -1,6 +1,8 @@
 package com.company.entity;
 
+
 import java.io.Serializable;
+
 
 public class Car implements Serializable {
     private int id;

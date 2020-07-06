@@ -3,6 +3,9 @@ package com.company.dao;
 import com.company.entity.Car;
 import com.company.exception.DuplicateCarException;
 
+import javax.xml.bind.JAXBContext;
+import javax.xml.bind.JAXBException;
+import javax.xml.bind.Marshaller;
 import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -58,5 +61,6 @@ public class SerializableCarDao implements CarDao {
             e.printStackTrace();
         }
     }
+
 }
 
