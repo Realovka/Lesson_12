@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class MemoryCarDao implements CarDao {
-    private List<Car> cars = new ArrayList<>();
+    private List<Car> cars = new ArrayList<Car>();
     private static MemoryCarDao instance;
 
     private MemoryCarDao() {
@@ -38,7 +38,7 @@ public class MemoryCarDao implements CarDao {
 
     @Override
     public List<Car> get() {
-        return new ArrayList<>(cars);
+        return new ArrayList<Car>(cars);
     }
 
     @Override

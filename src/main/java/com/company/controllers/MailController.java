@@ -1,5 +1,6 @@
 package com.company.controllers;
 
+import com.company.dao.DBSubscribersDao;
 import com.company.dao.MemorySubscriberDao;
 import com.company.dao.SubscribersDao;
 import com.company.entity.Subscriber;
@@ -12,7 +13,7 @@ import com.company.services.MailDiscountService;
 import java.util.List;
 
 public class MailController {
-    private SubscribersDao dao = new MemorySubscriberDao();
+    private SubscribersDao dao = new DBSubscribersDao();
 
     public void sendDiscountEmail(){
         List<Subscriber> subscribers = dao.get();
