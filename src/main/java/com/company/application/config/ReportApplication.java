@@ -1,4 +1,4 @@
-package com.company.services;
+package com.company.application.config;
 
 import com.company.controllers.CarController;
 import com.company.entity.Car;
@@ -8,8 +8,8 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.List;
 
-public class ReportService {
-    public static void getReport() {
+public class ReportApplication{
+    public static void getMessage(){
         try (
                 BufferedWriter writer = new BufferedWriter(new FileWriter("report.txt"))) {
             List<Car> list = new CarController().get();

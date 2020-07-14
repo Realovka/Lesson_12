@@ -1,5 +1,6 @@
 package com.company.application.actions;
 
+import com.company.application.config.ReportApplication;
 import com.company.application.exception.StopApplicationException;
 import com.company.controllers.ReportController;
 
@@ -11,7 +12,7 @@ public class GetReport implements Action{
 
     @Override
     public void action() throws StopApplicationException {
-        ReportController reportController = new ReportController();
+        ReportController reportController=new ReportController();
         new Thread(reportController).start();
     }
 }
